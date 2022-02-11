@@ -1,17 +1,12 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:stylish/models/Category.dart';
-import 'package:stylish/models/Product.dart';
 import 'package:stylish/screens/constants.dart';
 import 'package:stylish/screens/home/componeents/categories.dart';
 import 'package:stylish/screens/home/componeents/new_arrival.dart';
 import 'package:stylish/screens/home/componeents/popular.dart';
-import 'package:stylish/screens/home/componeents/product_card.dart';
 import 'package:stylish/screens/home/componeents/search_form.dart';
-import 'package:stylish/screens/home/componeents/section_title.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);

@@ -3,6 +3,7 @@ import 'package:stylish/models/Product.dart';
 import 'package:stylish/screens/constants.dart';
 import 'package:stylish/screens/home/componeents/product_card.dart';
 import 'package:stylish/screens/home/componeents/section_title.dart';
+import 'package:stylish/screens/home/product_all.dart';
 
 class Popular extends StatelessWidget {
   const Popular({
@@ -15,7 +16,13 @@ class Popular extends StatelessWidget {
       children: [
         SectionTitle(
           title: "Popular",
-          pressSeeAll: () {},
+          pressSeeAll: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ProductAllScreen(),
+                ));
+          },
         ),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,

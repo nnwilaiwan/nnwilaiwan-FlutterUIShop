@@ -4,6 +4,7 @@ import 'package:stylish/screens/constants.dart';
 import 'package:stylish/screens/detail/detail_screen.dart';
 import 'package:stylish/screens/home/componeents/product_card.dart';
 import 'package:stylish/screens/home/componeents/section_title.dart';
+import 'package:stylish/screens/home/product_all.dart';
 
 class NewArrival extends StatelessWidget {
   const NewArrival({
@@ -16,7 +17,13 @@ class NewArrival extends StatelessWidget {
       children: [
         SectionTitle(
           title: "New Arrival",
-          pressSeeAll: () {},
+          pressSeeAll: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ProductAllScreen(),
+                ));
+          },
         ),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
@@ -32,7 +39,14 @@ class NewArrival extends StatelessWidget {
                     price: demo_product[index].price,
                     bgColor: demo_product[index].bgColor,
                     press: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => DetailsScreen(product: demo_product[index],),));
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DetailsScreen(
+                            product: demo_product[index],
+                          ),
+                        ),
+                      );
                     },
                   ),
                 ),

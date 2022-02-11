@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:stylish/screens/constants.dart';
 import 'package:stylish/screens/home/home_screen.dart';
+import 'package:stylish/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
           bodyText2: TextStyle(color: Colors.black54),
         )
       ),
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }
