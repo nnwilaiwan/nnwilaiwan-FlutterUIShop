@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(const Duration(seconds: 10), () {
+    Timer(const Duration(seconds: 5), () {
       Navigator.push(
           context,
           MaterialPageRoute(
@@ -49,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> {
             alignment: Alignment.topCenter,
             padding: const EdgeInsets.only(top:defaultPadding * 6),
             child: Text(
-              "WellCome to\nMy Shop",
+              "WelCome to\nMy Shop",
               style: Theme.of(context)
                   .textTheme
                   .headline4!

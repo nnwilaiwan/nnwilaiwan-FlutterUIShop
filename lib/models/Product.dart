@@ -23,6 +23,7 @@ List<Product> demo_product = [
     image: "assets/images/product_1.png",
     title: "Casual Henley Shirts",
     price: 99,
+     bgColor: const Color(0xFFFEFBF9),
   ),
   Product(
     image: "assets/images/product_2.png",
